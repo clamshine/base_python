@@ -29,7 +29,7 @@ def readlog(serverip, port, user, pwd, file_dir):
     # 将命令传入管道中
     channel.exec_command(tail)
     while True:
-        # 判断退出的准备状态
+        # 判断退出的准备状态0
         if channel.exit_status_ready():
             break
         try:
